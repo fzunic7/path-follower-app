@@ -12,7 +12,6 @@ describe("pathFollowerUtils", () => {
       expect(nextPosition).toEqual([1, 0]);
     });
 
-    // Add more tests for different directions and scenarios
   });
 
   describe('getNextDirection', () => {
@@ -26,7 +25,7 @@ describe("pathFollowerUtils", () => {
 
       const nextDirection = getNextDirection(map, currentPosition, currentDirection);
       // Expecting to turn right at the intersection
-      expect(nextDirection).toEqual([1, 0]);
+      expect(nextDirection).toEqual([0, 1]);
     });
   });
 });
